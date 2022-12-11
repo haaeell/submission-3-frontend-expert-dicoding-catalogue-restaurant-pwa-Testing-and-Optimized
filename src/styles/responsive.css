@@ -1,0 +1,183 @@
+@media screen and (max-width: 599px) {
+	.header__menu,
+   .close__menu {
+		display: block;
+		color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 !important;
+	}
+
+	.close__element {
+		display: flex;
+      font-weight: 600;
+		justify-content: flex-end;
+	}
+
+	#nav {
+		padding: 20px;
+		z-index: 99;
+		background: rgb(163,15,15);
+		background: linear-gradient(90deg, rgba(163,15,15,1) 21%, rgba(215,95,34,1) 87%);
+		font-size: 28px;
+		top: 0;
+		position: absolute;
+		height: 100vh;
+		width: 100%;
+		left: -100%;
+		transition: left 0.3s ease-in-out;
+	}
+
+	#nav.open {
+		left: 0;
+	}
+
+	.nav__list {
+		display: list-item;
+	}
+
+	.nav__list li {
+		margin-bottom: 28px;
+	}
+
+   .nav a {
+      padding: 9px 0;
+   }
+}
+
+@media screen and (min-width: 500px) {
+	#nav {
+		font-size: 18px;
+	}
+
+	section {
+		margin-bottom: 80px;
+	}
+
+	.list-restoran__label {
+		font-size: 26px;
+	}
+
+	.list-restoran {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.restoran-item__name {
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 648px) {
+	.banner__title {
+		font-size: 28px;
+	}
+
+	.banner__tagline {
+		font-size: 18px;
+	}
+   
+   .other {
+      grid-template-columns: 1fr 2fr;
+   }
+   
+   .jobs-item,
+   .info-item {
+      height: 450px;
+   }
+   
+   .info-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+   
+   .info-item__thumbnail {
+      height: 100%;
+   }
+   .banner {
+	background-image: url("../public/images/sharp/hero-image_4-large.jpg");
+}
+}
+
+@media screen and (min-width: 768px) {
+	.restaurant {
+		display: flex;
+	}
+
+	.restaurant-detail__wrapper {
+		width: 90%;
+	}
+
+	.restaurant-detail__menu-list {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+
+	.restaurant-detail__foods,
+	.restaurant-detail__drinks {
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	main {
+		padding: 30px 80px;
+	}
+
+	.header {
+		padding: 20px 80px;
+	}
+
+	.banner__inner {
+		max-width: 85%;
+	}
+
+	.banner__title {
+		font-size: 32px;
+	}
+
+	.banner__tagline {
+		font-size: 22px;
+	}
+
+	section {
+		margin-bottom: 80px;
+	}
+
+	.list-restoran {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 24px;
+	}
+
+	.restoran-item__name {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	main {
+		padding: 30px 100px;
+	}
+
+	.header {
+		padding: 20px 100px;
+	}
+
+	.banner {
+		height: 100vh;
+		min-width: 1000px;
+	}
+
+	.banner__inner {
+		max-width: 800px;
+	}
+
+	.banner__title {
+		font-size: 40px;
+	}
+
+	.banner__tagline {
+		margin-top: 22px;
+		font-size: 18px;
+	}
+}
